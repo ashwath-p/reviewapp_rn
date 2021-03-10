@@ -4,8 +4,8 @@ import Home from './screens/home';
 import AppLoading from 'expo-app-loading';
 
 const getFonts = () => Font.loadAsync({
-  'futura-book': require('./assets/fonts/Futura Book font.ttf'),
-  'futura-medium': require('./assets/fonts/futura medium condensed bt.ttf')
+  'Nunito-Regular': require('./assets/fonts/Nunito-Regular.ttf'),
+  'Nunito-Bold': require('./assets/fonts/Nunito-Bold.ttf'),
 });
 
 export default function App() {

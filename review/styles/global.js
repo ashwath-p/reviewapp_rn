@@ -6,7 +6,7 @@ export const globalStyles = StyleSheet.create({
         flex: 1,
         padding: 20,
     }, text: {
-        fontFamily: 'futura-book',
+        fontFamily: 'Nunito-Bold',
         fontSize: 18,
         color: '#333'
     }, paragraph: {
