@@ -7,8 +7,12 @@ export const globalStyles = StyleSheet.create({
         padding: 20,
     }, titleText: {
         fontFamily: 'Nunito-Bold',
-        fontSize: 18,
-        color: '#333'
+        fontSize: 30,
+        color: '#333',
+        padding: 25,
+        borderColor: 'lightblue',
+        borderWidth: 2,
+        margin: 5
     }, paragraph: {
         marginVertical: 8,
         lineHeight: 20,
