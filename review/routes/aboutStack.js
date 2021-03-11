@@ -1,14 +1,15 @@
 import { createStackNavigator } from 'react-navigation-stack';
 import About from '../screens/about';
+import React from 'react';
+import Header from '../shared/header';
 
 const screens = {
     About: {
         screen: About,
-        navigationOptions: {
-            title: 'Review Demo Fuk',
-            // headerStyle: {
-            // backgroundColor: 'lightblue'
-            // }
+        navigationOptions: ({ navigation }) => {
+            return {
+                headerTitle: () => <Header navigation={navigation} title='bruhh' />,
+            }
         }
     }
 }

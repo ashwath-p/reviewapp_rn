@@ -6,7 +6,7 @@ import { globalStyles } from '../styles/global';
 export default function About() {
     return (
         <View style={globalStyles.container}>
-            <Text>About Page</Text>
+            <Text>Bruh, Really wanna know about me?</Text>
         </View>
     )
 }
