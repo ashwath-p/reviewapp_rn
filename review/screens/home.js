@@ -3,6 +3,7 @@ import { StyleSheet, View, Text, TouchableOpacity, FlatList, Modal } from 'react
 import { globalStyles } from '../styles/global';
 import { MaterialIcons } from '@expo/vector-icons';
 import Card from '../shared/card';
+import ReviewForms from './reviewForms';
 
 export default function Home({ navigation }) {
     const [modal, setModal] = useState(false);
@@ -20,7 +21,7 @@ export default function Home({ navigation }) {
                         size={24}
                         style={{ ...styles.modalToggle, ...styles.modalClose }}
                         onPress={() => setModal(false)} />
-                    <Text>HI you son of a bitxg</Text>
+                    <ReviewForms />
                 </View>
             </Modal>
             <MaterialIcons
