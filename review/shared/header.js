@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, Image, ImageBackground } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 
 export default function Header({ navigation, title }) {
@@ -7,12 +7,13 @@ export default function Header({ navigation, title }) {
         navigation.openDrawer();
     }
     return (
-        <View style={styles.header}>
+        <ImageBackground style={styles.header} source={require('../assets/game_bg.png')}>
             <MaterialIcons name='menu' size={28} onPress={pressHandler} style={styles.icon} />
-            <View>
+            <View style={styles.title}>
+                <Image source={require('../assets/heart_logo.png')} style={styles.image} />
                 <Text style={styles.headerText}>{title}</Text>
             </View>
-        </View>
+        </ImageBackground>
     )
 }
 
@@ -32,6 +33,15 @@ const styles = StyleSheet.create({
     icon: {
         position: 'absolute',
         left: 16
+    },
+    title: {
+        flexDirection: 'row',
+    },
+    image: {
+        width: 26,
+        height: 26,
+        marginHorizontal: 25,
+        marginTop: 8,
     }
 
 });
